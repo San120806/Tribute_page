@@ -1,0 +1,129 @@
+.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    align-items: center;
+
+}
+h1{
+    font-family: fantasy;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+
+.bio{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(161, 29, 29);
+    font-size: larger;
+}
+
+.details{
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+body {
+    animation: bgChange 10s ease-in-out infinite;
+    background: linear-gradient(135deg,#ffeaa7, #ffc0cb, #ffc0cb);
+    background-size: 400% 400%;
+    transition: all 1s ease;
+  }
+  
+
+div.div1 {
+    background-color: white;
+    padding: 40px; /* Adds space inside the div */
+    margin: 20px auto; /* Adds space around the div */
+    width: 80%; /* Or any fixed width like 600px */
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+    border-radius: 12px; /* Optional: rounded corners */
+}
+
+
+.square-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px dotted #e75480;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(231, 84, 128, 0.3);
+    padding: 6px;
+  background: linear-gradient(135deg, #ffc0cb, #d6f0ff, #ffeaa7);
+  
+}
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* allows clicking through hearts */
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .hearts span {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.7;
+    animation: floatUp 6s linear infinite;
+    user-select: none;
+  }
+  
+  .hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  .hearts span:nth-child(2) {
+    left: 25%;
+    animation-delay: 1s;
+  }
+  .hearts span:nth-child(3) {
+    left: 40%;
+    animation-delay: 2s;
+  }
+  .hearts span:nth-child(4) {
+    left: 60%;
+    animation-delay: 1.5s;
+  }
+  .hearts span:nth-child(5) {
+    left: 75%;
+    animation-delay: 0.5s;
+  }
+  .hearts span:nth-child(6) {
+    left: 90%;
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(100vh) scale(1);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bgChange {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  
